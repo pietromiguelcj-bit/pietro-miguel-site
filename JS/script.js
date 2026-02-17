@@ -1,44 +1,72 @@
-// Theme Manager
-const ThemeManager = {
-    toggle: null,
-    html: null,
+// ========================================
+// MODO DARK/LIGHT
+// ========================================
+const themeToggle = document.getElementById('themeToggle');
+const html = document.documentElement;
+
+// Verifica tema salvo ou preferência do sistema
+const getPreferredTheme = () => {
+    const saved = localStorage.getItem('theme');
+    if (saved) return saved;
     
-    init() {
-        this.toggle = document.getElementById('themeToggle');
-        this.html = document.documentElement;
-        
-        if (!this.toggle || !this.html) return;
-        
-        const savedTheme = this.getSavedTheme();
-        this.applyTheme(savedTheme);
-        
-        this.toggle.addEventListener('click', () => this.toggleTheme());
-    },
-    
-    getSavedTheme() {
-        const saved = localStorage.getItem('pietro-theme');
-        if (saved) return saved;
-        
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        return prefersDark ? 'dark' : 'light';
-    },
-    
-    applyTheme(theme) {
-        this.html.setAttribute('data-theme', theme);
-        localStorage.setItem('pietro-theme', theme);
-    },
-    
-    toggleTheme() {
-        const current = this.html.getAttribute('data-theme');
-        const newTheme = current === 'dark' ? 'light' : 'dark';
-        this.applyTheme(newTheme);
-    }
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    return prefersDark ? 'dark' : 'light';
 };
 
-// Inicializa quando o DOM carregar
-document.addEventListener('DOMContentLoaded', () => {
-    ThemeManager.init();
+// Aplica o tema
+const applyTheme = (theme) => {
+    html.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+};
+
+// Inicializa
+applyTheme(getPreferredTheme());
+
+// Toggle ao clicar
+if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+        const current = html.getAttribute('data-theme');
+        const newTheme = current === 'dark' ? 'light' : 'dark';
+        applyTheme(newTheme);
+    });
+}
+
+// Ano dinâmico no footer
+const yearElement = document.getElementById('year');
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+}
+
+// Menu mobile
+const navToggle = document.querySelector('.nav__toggle');
+const navMenu = document.querySelector('.nav__menu');
+
+if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+        navToggle.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+    
+    document.querySelectorAll('.nav__link').forEach(link => {
+        link.addEventListener('click', () => {
+            navToggle.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
+}
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
 });
+
+console.log('✅ Site carregado com sucesso!');
 
 (function() {
     'use strict';
@@ -421,3 +449,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 })();   
+
