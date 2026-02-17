@@ -1,4 +1,11 @@
+/* ========================================
+   PIETRO MIGUEL - LANDING PAGE
+   CSS Moderno, Responsivo e Otimizado
+   ======================================== */
 
+/* ========================================
+   1. VARIÁVEIS CSS (CUSTOM PROPERTIES)
+   ======================================== */
 :root {
     /* ===== Cores - LIGHT MODE (Padrão) ===== */
     --color-bg: #fafafa;
@@ -51,12 +58,12 @@
     --line-height-tight: 1.3;
     
     /* ===== Espaçamento ===== */
-    --spacing-xs: 0.5rem;    /* 8px */
-    --spacing-sm: 1rem;      /* 16px */
-    --spacing-md: 1.5rem;    /* 24px */
-    --spacing-lg: 2.5rem;    /* 40px */
-    --spacing-xl: 4rem;      /* 64px */
-    --spacing-2xl: 6rem;     /* 96px */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2.5rem;
+    --spacing-xl: 4rem;
+    --spacing-2xl: 6rem;
     
     /* ===== Bordas ===== */
     --border-radius: 8px;
@@ -123,8 +130,6 @@
     --toggle-bg: #334155;
     --toggle-ball: #f1f5f9;
     --toggle-ball-shadow: rgba(0, 0, 0, 0.4);
-    
-    --color-shadow: rgba(0, 0, 0, 0.4);
 }
 
 /* ========================================
@@ -154,7 +159,6 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Remove delay on hover for mobile */
 @media (hover: hover) {
     html {
         scroll-behavior: smooth;
@@ -323,7 +327,7 @@ a:hover {
     border: 2px solid transparent;
     white-space: nowrap;
     background: transparent;
-    min-height: 50px; /* Touch-friendly */
+    min-height: 50px;
 }
 
 .btn__icon {
@@ -569,7 +573,6 @@ a:hover {
     margin-bottom: var(--spacing-lg);
 }
 
-/* Trust Indicators */
 .hero__trust {
     display: flex;
     gap: var(--spacing-md);
@@ -804,7 +807,6 @@ a:hover {
     gap: var(--spacing-sm);
 }
 
-/* Cartões de preço principais */
 .pricing-card {
     background: var(--color-bg-card);
     padding: var(--spacing-md);
@@ -929,7 +931,6 @@ a:hover {
     margin-top: var(--spacing-xs) !important;
 }
 
-/* Cartões compactos */
 .pricing-card-compact {
     background: var(--color-bg-card);
     padding: var(--spacing-sm);
@@ -1005,50 +1006,6 @@ a:hover {
     margin-left: var(--spacing-xs);
 }
 
-/* Extras Opcionais */
-.pricing-extras {
-    background: var(--color-bg-card);
-    padding: var(--spacing-md);
-    border-radius: var(--border-radius-lg);
-    border: 1px dashed var(--color-border);
-    margin-top: var(--spacing-md);
-}
-
-.pricing-extras__title {
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-primary);
-    margin-bottom: var(--spacing-sm);
-}
-
-.extras-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--spacing-sm);
-}
-
-.extra-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--spacing-xs) var(--spacing-sm);
-    background: var(--color-bg);
-    border-radius: var(--border-radius);
-    font-size: var(--font-size-sm);
-}
-
-.extra-name {
-    color: var(--color-text);
-}
-
-.extra-price {
-    color: var(--color-accent);
-    font-weight: var(--font-weight-bold);
-    white-space: nowrap;
-    margin-left: var(--spacing-sm);
-}
-
-/* Dicas e Termos */
 .pricing-tip,
 .pricing-terms {
     background: var(--color-bg-card);
@@ -1292,7 +1249,6 @@ a:hover {
     color: #ffffff;
 }
 
-/* Hide on very small screens */
 @media (max-width: 480px) {
     .whatsapp-float {
         width: 50px;
@@ -1311,23 +1267,13 @@ a:hover {
    18. ANIMAÇÕES
    ======================================== */
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
 }
 
 .section {
@@ -1338,7 +1284,6 @@ a:hover {
     animation: fadeInUp 0.8s ease-out forwards;
 }
 
-/* Stagger animations for grid items */
 .problem__item:nth-child(2) { animation-delay: 0.1s; }
 .problem__item:nth-child(3) { animation-delay: 0.2s; }
 .problem__item:nth-child(4) { animation-delay: 0.3s; }
@@ -1429,10 +1374,6 @@ a:hover {
         grid-template-columns: 1fr;
     }
     
-    .extras-grid {
-        grid-template-columns: 1fr;
-    }
-    
     .theme-toggle {
         margin-right: 0;
     }
@@ -1457,17 +1398,9 @@ a:hover {
    20. RESPONSIVIDADE - MOBILE (480px)
    ======================================== */
 @media (max-width: 480px) {
-    .hero__title {
-        font-size: 2.2rem;
-    }
-    
-    .hero__subtitle {
-        font-size: 1.1rem;
-    }
-    
-    .section {
-        padding: var(--spacing-lg) 0;
-    }
+    .hero__title { font-size: 2.2rem; }
+    .hero__subtitle { font-size: 1.1rem; }
+    .section { padding: var(--spacing-lg) 0; }
     
     .pricing-card,
     .service-card,
@@ -1481,22 +1414,13 @@ a:hover {
         font-size: var(--font-size-base);
     }
     
-    .hero__text {
-        font-size: var(--font-size-base);
-    }
-    
+    .hero__text,
     .contact__text {
         font-size: var(--font-size-base);
     }
     
-    .pricing-card__price {
-        font-size: 1.5rem;
-    }
-    
-    .popular-badge {
-        font-size: 0.6rem;
-        padding: 3px 12px;
-    }
+    .pricing-card__price { font-size: 1.5rem; }
+    .popular-badge { font-size: 0.6rem; padding: 3px 12px; }
 }
 
 /* ========================================
@@ -1511,7 +1435,6 @@ button:focus,
     outline-offset: 2px;
 }
 
-/* Skip link for screen readers */
 .skip-link {
     position: absolute;
     top: -40px;
@@ -1523,26 +1446,17 @@ button:focus,
     transition: top 0.3s;
 }
 
-.skip-link:focus {
-    top: 0;
-}
+.skip-link:focus { top: 0; }
 
-/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
+    *, *::before, *::after {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
     }
-    
-    html {
-        scroll-behavior: auto;
-    }
+    html { scroll-behavior: auto; }
 }
 
-/* High contrast mode support */
 @media (prefers-contrast: high) {
     :root {
         --color-border: #000000;
@@ -1554,40 +1468,10 @@ button:focus,
    22. PRINT STYLES
    ======================================== */
 @media print {
-    .header,
-    .whatsapp-float,
-    .theme-toggle,
-    .nav__toggle {
+    .header, .whatsapp-float, .theme-toggle, .nav__toggle {
         display: none !important;
     }
-    
-    body {
-        background: #ffffff;
-        color: #000000;
-    }
-    
-    .section {
-        page-break-inside: avoid;
-    }
-    
-    a {
-        text-decoration: underline;
-    }
-
-}
-
-/* Variáveis Light Mode */
-:root {
-    --color-bg: #fafafa;
-    --color-bg-alt: #ffffff;
-    --color-text: #1a1a1a;
-    /* ... resto das variáveis */
-}
-
-/* Dark Mode */
-[data-theme="dark"] {
-    --color-bg: #0f172a;
-    --color-bg-alt: #1e293b;
-    --color-text: #f1f5f9;
-    /* ... resto das variáveis escuras */
+    body { background: #ffffff; color: #000000; }
+    .section { page-break-inside: avoid; }
+    a { text-decoration: underline; }
 }
