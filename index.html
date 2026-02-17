@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <!-- Meta Tags SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Pietro Miguel - Criação de Sites Profissionais, Design Gráfico, Planilhas Excel e Soluções Digitais para Comércios Locais. Aumente suas vendas com presença digital estratégica.">
+    <meta name="keywords" content="criação de sites, web design, landing page, design gráfico, planilhas excel, identidade visual, comércios locais, presença digital, Pietro Miguel">
+    <meta name="author" content="Pietro Miguel">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0a1929">
+    
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pietromiguel.com.br/">
+    <meta property="og:title" content="Pietro Miguel | Criação de Sites e Soluções Digitais">
+    <meta property="og:description" content="Transforme seu comércio local com soluções digitais profissionais. Sites, design, planilhas e muito mais.">
+    <meta property="og:image" content="https://pietromiguel.com.br/assets/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Pietro Miguel | Criação de Sites e Soluções Digitais">
+    <meta property="twitter:description" content="Transforme seu comércio local com soluções digitais profissionais.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    
+    <!-- Título -->
+    <title>Pietro Miguel | Criação de Sites e Soluções Digitais para Comércios Locais</title>
+    
+    <!-- Pré-carregamento de fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="LOGOTIPOPM.png">
+
+    
+    <!-- Schema.org para SEO Local -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Pietro Miguel - Soluções Digitais",
+        "description": "Criação de Sites e Soluções Digitais para Comércios Locais",
+        "url": "https://pietromiguel.com.br",
+        "telephone": "+5531983596154",
+        "priceRange": "R$",
+        "areaServed": "Brasil"
+    }
+    </script>
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header" role="banner">
+        <nav class="nav container" role="navigation" aria-label="Menu principal">
+            <a href="#" class="nav__logo" aria-label="Página inicial">
+                <span class="logo-text">Pietro Miguel</span>
+            </a>
+            
+            <!-- Toggle Dark/Light Mode -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo escuro ou claro" type="button">
+                <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="5"/>
+                    <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                </svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </button>
+            
+            <!-- Menu Desktop -->
+            <ul class="nav__menu" role="menubar">
+                <li role="none"><a href="#servicos" class="nav__link" role="menuitem">Serviços</a></li>
+                <li role="none"><a href="#pacotes" class="nav__link" role="menuitem">Pacotes</a></li>
+                <li role="none"><a href="#diferenciais" class="nav__link" role="menuitem">Diferenciais</a></li>
+                <li role="none"><a href="#contato" class="nav__link nav__link--cta" role="menuitem">Contato</a></li>
+            </ul>
+            
+            <!-- Menu Mobile Toggle -->
+            <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main role="main">
+        <!-- ========================================
+             HERO SECTION
+             ======================================== -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero__content">
+                <h1 id="hero-title" class="hero__title">Pietro Miguel</h1>
+                <p class="hero__subtitle">Criação de Sites e Soluções Digitais</p>
+                <p class="hero__text">
+                    Transforme seu comércio local com presença digital profissional. 
+                    <strong>Organize, credibilize e venda mais</strong> com soluções estratégicas.
+                </p>
+                <div class="hero__buttons">
+                    <a href="https://wa.me/5531983596154?text=Olá!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20seus%20serviços." 
+                       class="btn btn--whatsapp" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       aria-label="Falar com Pietro no WhatsApp">
+                        <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004c-1.775.004-3.549-.538-5.056-1.492-1.507-.954-2.71-2.272-3.48-3.818-.77-1.546-1.103-3.262-.983-4.948.12-1.686.73-3.296 1.755-4.642 1.025-1.346 2.424-2.408 4.022-3.06 1.598-.652 3.34-.867 5.028-.62 1.688.247 3.27 1.003 4.55 2.18 1.28 1.177 2.18 2.71 2.59 4.38.41 1.67.31 3.42-.29 5.02-.6 1.6-1.67 3.01-3.07 4.01-1.4 1-3.06 1.54-4.76 1.57"/>
+                        </svg>
+                        Falar no WhatsApp
+                    </a>
+                    <a href="#pacotes" class="btn btn--outline" aria-label="Ver todos os pacotes e preços">
+                        Ver Pacotes
+                    </a>
+                </div>
+                
+                <!-- Trust Indicators -->
+                <div class="hero__trust">
+                    <span class="trust-item">✅ Entrega Rápida</span>
+                    <span class="trust-item">✅ Pagamento Flexível</span>
+                    <span class="trust-item">✅ Suporte Dedicado</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             PROBLEM SECTION
+             ======================================== -->
+        <section class="section problem" aria-labelledby="problem-title">
+            <div class="container">
+                <h2 id="problem-title" class="section__title">Seu comércio enfrenta esses problemas?</h2>
+                <div class="problem__grid">
+                    <article class="problem__item">
+                        <span class="problem__icon" aria-hidden="true">📱</span>
+                        <h3>Dependência do Instagram</h3>
+                        <p>Algoritmos mudam, contas caem e você perde todo o trabalho da noite para o dia.</p>
+                    </article>
+                    <article class="problem__item">
+                        <span class="problem__icon" aria-hidden="true">💬</span>
+                        <h3>WhatsApp Desorganizado</h3>
+                        <p>Mensagens perdidas, pedidos esquecidos e clientes esperando respostas por horas.</p>
+                    </article>
+                    <article class="problem__item">
+                        <span class="problem__icon" aria-hidden="true">🌐</span>
+                        <h3>Sem Site Próprio</h3>
+                        <p>Sem endereço digital fixo, seu negócio parece menos profissional e confiável.</p>
+                    </article>
+                    <article class="problem__item">
+                        <span class="problem__icon" aria-hidden="true">📉</span>
+                        <h3>Vendas Perdidas</h3>
+                        <p>Clientes pesquisam no Google e não te encontram. Isso é dinheiro deixando sua mesa.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SOLUTION SECTION
+             ======================================== -->
+        <section class="section solution" aria-labelledby="solution-title">
+            <div class="container solution__content">
+                <h2 id="solution-title" class="section__title">A Solução Completa</h2>
+                <p class="solution__text">
+                    Eu crio soluções digitais <strong>simples, eficientes e acessíveis</strong> pensadas especialmente para pequenos negócios. 
+                    Meu foco é transformar sua presença online em uma <strong>ferramenta real de vendas e organização</strong>.
+                </p>
+                <ul class="solution__highlights" role="list">
+                    <li>✅ Sites modernos e responsivos que funcionam em qualquer celular</li>
+                    <li>✅ Design estratégico focado em converter visitantes em clientes</li>
+                    <li>✅ Organização digital completa do seu fluxo de trabalho</li>
+                    <li>✅ Soluções práticas que cabem no orçamento do seu negócio</li>
+                    <li>✅ Suporte dedicado mesmo após a entrega do projeto</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SERVICES SECTION
+             ======================================== -->
+        <section id="servicos" class="section services" aria-labelledby="services-title">
+            <div class="container">
+                <h2 id="services-title" class="section__title">Serviços Especializados</h2>
+                <p class="section__subtitle">Tudo que seu negócio precisa para crescer no digital</p>
+                
+                <div class="services__grid">
+                    <!-- 💻 Criação de Sites -->
+                    <article class="service-card">
+                        <div class="service-card__icon" aria-hidden="true">💻</div>
+                        <h3 class="service-card__title">Criação de Sites</h3>
+                        <p class="service-card__desc">Sites profissionais, rápidos e otimizados para converter visitantes em clientes.</p>
+                        <ul class="service-card__includes" role="list">
+                            <li>✓ Landing Pages de alta conversão</li>
+                            <li>✓ Sites Institucionais completos</li>
+                            <li>✓ Sites para comércio local</li>
+                            <li>✓ Totalmente responsivo (mobile-first)</li>
+                            <li>✓ Otimização SEO básica</li>
+                            <li>✓ Integração com WhatsApp</li>
+                        </ul>
+                        <a href="#pacotes" class="service-card__link">Ver pacotes de sites →</a>
+                    </article>
+
+                    <!-- 🎨 Design Gráfico -->
+                    <article class="service-card">
+                        <div class="service-card__icon" aria-hidden="true">🎨</div>
+                        <h3 class="service-card__title">Design Gráfico</h3>
+                        <p class="service-card__desc">Identidade visual profissional que transmite confiança e atrai clientes.</p>
+                        <ul class="service-card__includes" role="list">
+                            <li>✓ Artes para Instagram e redes sociais</li>
+                            <li>✓ Criativos para anúncios (Meta Ads)</li>
+                            <li>✓ Identidade visual completa</li>
+                            <li>✓ Logotipos profissionais</li>
+                            <li>✓ Materiais promocionais</li>
+                            <li>✓ Banners e thumbnails</li>
+                        </ul>
+                        <a href="#pacotes" class="service-card__link">Ver pacotes de design →</a>
+                    </article>
+
+                    <!-- 📊 Planilhas Excel -->
+                    <article class="service-card">
+                        <div class="service-card__icon" aria-hidden="true">📊</div>
+                        <h3 class="service-card__title">Planilhas Excel</h3>
+                        <p class="service-card__desc">Controle total do seu negócio com planilhas automatizadas e inteligentes.</p>
+                        <ul class="service-card__includes" role="list">
+                            <li>✓ Controle financeiro automatizado</li>
+                            <li>✓ Gestão de estoque inteligente</li>
+                            <li>✓ Dashboards visuais personalizados</li>
+                            <li>✓ Relatórios automáticos</li>
+                            <li>✓ Fórmulas avançadas</li>
+                            <li>✓ Fácil de usar e manter</li>
+                        </ul>
+                        <a href="#pacotes" class="service-card__link">Ver pacotes de planilhas →</a>
+                    </article>
+
+                    <!-- 📽 Apresentações -->
+                    <article class="service-card">
+                        <div class="service-card__icon" aria-hidden="true">📽</div>
+                        <h3 class="service-card__title">Apresentações</h3>
+                        <p class="service-card__desc">Slides profissionais que comunicam sua ideia com clareza e impacto.</p>
+                        <ul class="service-card__includes" role="list">
+                            <li>✓ Apresentações comerciais</li>
+                            <li>✓ Pitch de vendas para investidores</li>
+                            <li>✓ Slides para treinamentos</li>
+                            <li>✓ Design profissional e moderno</li>
+                            <li>✓ Animações sutis e elegantes</li>
+                            <li>✓ Formato PowerPoint ou Google Slides</li>
+                        </ul>
+                        <a href="#pacotes" class="service-card__link">Ver pacotes de apresentações →</a>
+                    </article>
+
+                    <!-- 🤖 IA - Vídeos e Imagens -->
+                    <article class="service-card">
+                        <div class="service-card__icon" aria-hidden="true">🤖</div>
+                        <h3 class="service-card__title">IA - Vídeos e Imagens</h3>
+                        <p class="service-card__desc">Conteúdo visual inovador gerado com inteligência artificial de ponta.</p>
+                        <ul class="service-card__includes" role="list">
+                            <li>✓ Imagens geradas por IA</li>
+                            <li>✓ Vídeos promocionais com IA</li>
+                            <li>✓ Avatares digitais</li>
+                            <li>✓ Edição profissional</li>
+                            <li>✓ Roteiros otimizados</li>
+                            <li>✓ Conteúdo único e exclusivo</li>
+                        </ul>
+                        <a href="#contato" class="service-card__link">Solicitar orçamento →</a>
+                    </article>
+
+                    <!-- 🎯 Identidade Visual -->
+                    <article class="service-card">
+                        <div class="service-card__icon" aria-hidden="true">🎯</div>
+                        <h3 class="service-card__title">Identidade Visual</h3>
+                        <p class="service-card__desc">Marca forte e memorável que diferencia seu negócio da concorrência.</p>
+                        <ul class="service-card__includes" role="list">
+                            <li>✓ Logotipo profissional</li>
+                            <li>✓ Paleta de cores estratégica</li>
+                            <li>✓ Tipografia personalizada</li>
+                            <li>✓ Manual da marca</li>
+                            <li>✓ Aplicações em diversos formatos</li>
+                            <li>✓ Variações para diferentes usos</li>
+                        </ul>
+                        <a href="#pacotes" class="service-card__link">Ver pacotes de identidade →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             PACOTES E PREÇOS
+             ======================================== -->
+        <section id="pacotes" class="section pricing" aria-labelledby="pricing-title">
+            <div class="container">
+                <h2 id="pricing-title" class="section__title">Pacotes e Investimento</h2>
+                <p class="section__subtitle">Escolha o pacote ideal para seu negócio</p>
+                
+                <!-- 💻 PACOTES DE SITES -->
+                <div class="pricing-category">
+                    <h3 class="pricing-category__title">
+                        <span aria-hidden="true">💻</span> Criação de Sites
+                    </h3>
+                    
+                    <div class="pricing-grid">
+                        <!-- Essencial -->
+                        <article class="pricing-card">
+                            <div class="pricing-card__header">
+                                <span class="pricing-card__badge pricing-card__badge--green">🟢 Essencial</span>
+                                <div class="pricing-card__price-wrapper">
+                                    <span class="pricing-card__price">R$ 497</span>
+                                </div>
+                            </div>
+                            <p class="pricing-card__desc">Perfeito para quem está começando no digital.</p>
+                            <ul class="pricing-card__features" role="list">
+                                <li><span class="check" aria-hidden="true">✓</span> Landing page simples (1 página)</li>
+                                <li><span class="check" aria-hidden="true">✓</span> Botão WhatsApp integrado</li>
+                                <li><span class="check" aria-hidden="true">✓</span> Links para Instagram</li>
+                                <li><span class="check" aria-hidden="true">✓</span> Design moderno e responsivo</li>
+                                <li><span class="check" aria-hidden="true">✓</span> 1 rodada de revisões</li>
+                                <li><span class="check" aria-hidden="true">✓</span> Entrega em até 7 dias úteis</li>
+                            </ul>
+                            <a href="https://wa.me/5531983596154?text=Olá!%20Tenho%20interesse%20no%20Pacote%20Essencial%20de%20site%20(R$497)." 
+                               class="btn btn--outline btn--full" 
+                               target="_blank" 
+                               rel="noopener">
+                                Começar com Essencial
+                            </a>
+                        </article>
+                        
+                        <!-- Profissional (DESTAQUE) -->
+                        <article class="pricing-card pricing-card--popular">
+                            <div class="popular-badge">MAIS ESCOLHIDO</div>
+                            <div class="pricing-card__header">
+                                <span class="pricing-card__badge pricing-card__badge--blue">🔵 Profissional</span>
+                                <div class="pricing-card__price-wrapper">
+                                    <span class="pricing-card__price">R$ 897</span>
+                                </div>
+                            </div>
+                            <p class="pricing-card__desc">Ideal para comércios que querem vender mais.</p>
+                            <ul class="pricing-card__features" role="list">
+                                <li><span class="check" aria-hidden="true">✓</span> Site com até 5 seções</li>
+                                <li><span class="check" aria-hidden="true">✓</span> Layout 100% personalizado</li>
+                                <li><span class="check" aria-hidden="true">✓</span> Integração Google Maps</li>
+                                <li><span class="check" aria-hidden="true">✓</span> Botão WhatsApp estratégico</li>
+                                <li><span class="check" aria-hidden="true">✓</span> SEO básico configurado</li>
+                                <li><span class="check" aria-hidden="true">✓</span> 2 rodadas de revisões</li>
+                                <li><span class="check" aria-hidden="true">✓</span> Entrega em até 10 dias úteis</li>
+                                <li><span class="check" aria-hidden="true">✓</span> <strong>1 mês de suporte grátis</strong></li>
+                            </ul>
+                            <a href="https://wa.me/5531983596154?text=Olá!%20Tenho%20interesse%20no%20Pacote%20Profissional%20de%20site%20(R$897)." 
+                               class="btn btn--whatsapp btn--full" 
+                               target="_blank" 
+                               rel="noopener">
+                                Quero Este Pacote
+                            </a>
+                        </article>
+                        
+                        <!-- Premium -->
+                        <article class="pricing-card">
+                            <div class="pricing-card__header">
+                                <span class="pricing-card__badge pricing-card__badge--purple">🟣 Premium</span>
+                                <div class="pricing-card__price-wrapper">
+                                    <span class="pricing-card__price">R$ 1.497</span>
+                                </div>
+                            </div>
+                            <p class="pricing-card__desc">Para negócios que buscam autoridade máxima.</p>
+                            <ul class="pricing-card__features" role="list">
+                                <li><span class="check" aria-hidden="true">✓</span> Site completo personalizado</li>
+                                <li><span class="check" aria-hidden="true">✓</span> Copywriting estratégico</li>
+                                <li><span class="check" aria-hidden="true">✓</span> Estrutura de conversão avançada</li>
+                                <li><span class="check" aria-hidden="true">✓</span> SEO otimizado</li>
+                                <li><span class="check" aria-hidden="true">✓</span> Performance maximizada</li>
+                                <li><span class="check" aria-hidden="true">✓</span> 3 rodadas de revisões</li>
+                                <li><span class="check" aria-hidden="true">✓</span> Entrega em até 15 dias úteis</li>
+                                <li><span class="check" aria-hidden="true">✓</span> <strong>30 dias de suporte incluso</strong></li>
+                            </ul>
+                            <a href="https://wa.me/5531983596154?text=Olá!%20Tenho%20interesse%20no%20Pacote%20Premium%20de%20site%20(R$1497)." 
+                               class="btn btn--outline btn--full" 
+                               target="_blank" 
+                               rel="noopener">
+                                Falar Sobre Premium
+                            </a>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- 🎨 PACOTES DE DESIGN -->
+                <div class="pricing-category">
+                    <h3 class="pricing-category__title">
+                        <span aria-hidden="true">🎨</span> Design Gráfico
+                    </h3>
+                    
+                    <div class="pricing-grid pricing-grid--compact">
+                        <article class="pricing-card-compact">
+                            <h4>Post Estático Instagram</h4>
+                            <ul class="pricing-list-compact" role="list">
+                                <li><span>1 arte</span> <strong>R$ 35</strong></li>
+                                <li><span>Pacote 5 artes</span> <strong>R$ 150</strong> <span class="save-tag">Economize R$ 25</span></li>
+                                <li><span>Pacote 10 artes</span> <strong>R$ 270</strong> <span class="save-tag">Economize R$ 80</span></li>
+                            </ul>
+                        </article>
+                        
+                        <article class="pricing-card-compact">
+                            <h4>Criativo para Anúncios (Meta Ads)</h4>
+                            <ul class="pricing-list-compact" role="list">
+                                <li><span>1 criativo</span> <strong>R$ 60</strong></li>
+                                <li><span>Pacote 5 criativos</span> <strong>R$ 250</strong> <span class="save-tag">Economize R$ 50</span></li>
+                            </ul>
+                        </article>
+                        
+                        <article class="pricing-card-compact">
+                            <h4>Identidade Visual Básica</h4>
+                            <p class="pricing-card-compact__price">R$ 350</p>
+                            <ul class="pricing-list-compact" role="list">
+                                <li><span class="check" aria-hidden="true">✓</span> Logotipo profissional</li>
+                                <li><span class="check" aria-hidden="true">✓</span> Paleta de cores</li>
+                                <li><span class="check" aria-hidden="true">✓</span> Tipografia definida</li>
+                                <li><span class="check" aria-hidden="true">✓</span> 3 variações de logo</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- 📊 PACOTES DE PLANILHAS -->
+                <div class="pricing-category">
+                    <h3 class="pricing-category__title">
+                        <span aria-hidden="true">📊</span> Planilhas Excel
+                    </h3>
+                    
+                    <div class="pricing-grid pricing-grid--compact">
+                        <article class="pricing-card-compact">
+                            <h4>🟢 Simples <span class="price-tag">R$ 120</span></h4>
+                            <p>Controle básico de vendas, estoque e caixa diário.</p>
+                        </article>
+                        <article class="pricing-card-compact">
+                            <h4>🔵 Intermediária <span class="price-tag">R$ 250</span></h4>
+                            <p>Automatizada com fórmulas inteligentes e relatórios.</p>
+                        </article>
+                        <article class="pricing-card-compact">
+                            <h4>🟣 Avançada <span class="price-tag">R$ 450</span></h4>
+                            <p>Automação completa + dashboard visual profissional.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- 📽 PACOTES DE APRESENTAÇÕES -->
+                <div class="pricing-category">
+                    <h3 class="pricing-category__title">
+                        <span aria-hidden="true">📽</span> Apresentações (Slides)
+                    </h3>
+                    
+                    <div class="pricing-grid pricing-grid--compact">
+                        <article class="pricing-card-compact">
+                            <ul class="pricing-list-compact" role="list">
+                                <li><span>Até 10 slides</span> <strong>R$ 150</strong></li>
+                                <li><span>Até 20 slides</span> <strong>R$ 280</strong></li>
+                                <li><span>Pitch profissional / vendas</span> <strong>R$ 350</strong></li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- 🤖 PACOTES DE IA -->
+                <div class="pricing-category">
+                    <h3 class="pricing-category__title">
+                        <span aria-hidden="true">🤖</span> IA - Vídeos e Imagens
+                    </h3>
+                    
+                    <div class="pricing-grid pricing-grid--compact">
+                        <article class="pricing-card-compact">
+                            <h4>Pacote Imagens IA</h4>
+                            <ul class="pricing-list-compact" role="list">
+                                <li><span>10 imagens</span> <strong>R$ 150</strong></li>
+                                <li><span>25 imagens</span> <strong>R$ 350</strong></li>
+                            </ul>
+                        </article>
+                        <article class="pricing-card-compact">
+                            <h4>Pacote Vídeos IA</h4>
+                            <ul class="pricing-list-compact" role="list">
+                                <li><span>Vídeo 30s</span> <strong>R$ 250</strong></li>
+                                <li><span>Vídeo 60s</span> <strong>R$ 450</strong></li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- 💼 PACOTES COMBINADOS -->
+                <div class="pricing-category pricing-category--combined">
+                    <h3 class="pricing-category__title">
+                        <span aria-hidden="true">💼</span> Pacotes Combinados 
+                        <span class="subtitle">(Melhor Custo-Benefício)</span>
+                    </h3>
+                    
+                    <div class="pricing-grid">
+                        <article class="pricing-card pricing-card--combined">
+                            <div class="pricing-card__header">
+                                <span class="pricing-card__badge">🚀 Presença Digital Inicial</span>
+                                <div class="pricing-card__price-wrapper">
+                                    <span class="pricing-card__price">R$ 997</span>
+                                    <span class="pricing-card__old-price">R$ 1.100</span>
+                                </div>
+                            </div>
+                            <ul class="pricing-card__features" role="list">
+                                <li><span class="check" aria-hidden="true">✓</span> Site Essencial</li>
+                                <li><span class="check" aria-hidden="true">✓</span> 5 artes para Instagram</li>
+                                <li><span class="check" aria-hidden="true">✓</span> 1 criativo para anúncio</li>
+                                <li class="pricing-card__save"><strong>Você economiza R$ 103!</strong></li>
+                            </ul>
+                            <a href="https://wa.me/5531983596154?text=Olá!%20Tenho%20interesse%20no%20Pacote%20Presença%20Digital%20Inicial%20(R$997)." 
+                               class="btn btn--outline btn--full" 
+                               target="_blank" 
+                               rel="noopener">
+                                Quero Começar
+                            </a>
+                        </article>
+                        
+                        <article class="pricing-card pricing-card--combined pricing-card--popular">
+                            <div class="popular-badge">MELHOR OPÇÃO</div>
+                            <div class="pricing-card__header">
+                                <span class="pricing-card__badge pricing-card__badge--blue">🔥 Comércio Estruturado</span>
+                                <div class="pricing-card__price-wrapper">
+                                    <span class="pricing-card__price">R$ 1.497</span>
+                                    <span class="pricing-card__old-price">R$ 1.750</span>
+                                </div>
+                            </div>
+                            <ul class="pricing-card__features" role="list">
+                                <li><span class="check" aria-hidden="true">✓</span> Site Profissional</li>
+                                <li><span class="check" aria-hidden="true">✓</span> 10 artes para Instagram</li>
+                                <li><span class="check" aria-hidden="true">✓</span> Planilha controle financeiro</li>
+                                <li><span class="check" aria-hidden="true">✓</span> 2 criativos para anúncio</li>
+                                <li class="pricing-card__save"><strong>Você economiza R$ 253!</strong></li>
+                            </ul>
+                            <a href="https://wa.me/5531983596154?text=Olá!%20Tenho%20interesse%20no%20Pacote%20Comércio%20Estruturado%20(R$1497)." 
+                               class="btn btn--whatsapp btn--full" 
+                               target="_blank" 
+                               rel="noopener">
+                                Estruturar Meu Negócio
+                            </a>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- ⚠️ CONDIÇÕES DE PAGAMENTO -->
+                <div class="pricing-terms">
+                    <h4>⚠️ Condições de Pagamento</h4>
+                    <ul class="pricing-terms__list" role="list">
+                        <li>✅ <strong>Opção 1:</strong> 50% de entrada + 50% na entrega</li>
+                        <li>✅ <strong>Opção 2:</strong> 30% de entrada + 70% na finalização</li>
+                        <li class="pricing-terms__alert">🔒 <strong>Importante:</strong> Todo projeto requer entrada para início. Valorize seu tempo e trabalho.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             DIFERENCIAIS
+             ======================================== -->
+        <section id="diferenciais" class="section differentials" aria-labelledby="differentials-title">
+            <div class="container">
+                <h2 id="differentials-title" class="section__title">Por Que Trabalhar Comigo?</h2>
+                <div class="differentials__grid">
+                    <article class="differential__item">
+                        <span class="differential__icon" aria-hidden="true">🤝</span>
+                        <h3>Atendimento Direto</h3>
+                        <p>Você fala diretamente comigo, sem intermediários ou atendentes. Comunicação clara e transparente do início ao fim.</p>
+                    </article>
+                    <article class="differential__item">
+                        <span class="differential__icon" aria-hidden="true">🎯</span>
+                        <h3>Foco em Pequenos Negócios</h3>
+                        <p>Entendo suas dores e crio soluções que fazem sentido para sua realidade e orçamento.</p>
+                    </article>
+                    <article class="differential__item">
+                        <span class="differential__icon" aria-hidden="true">⚡</span>
+                        <h3>Entrega Rápida</h3>
+                        <p>Prazos cumpridos com qualidade. Seu negócio não pode esperar, e eu sei disso.</p>
+                    </article>
+                    <article class="differential__item">
+                        <span class="differential__icon" aria-hidden="true">💬</span>
+                        <h3>Comunicação Clara</h3>
+                        <p>Sem jargões técnicos complicados. Explico tudo de forma simples que você entende.</p>
+                    </article>
+                    <article class="differential__item">
+                        <span class="differential__icon" aria-hidden="true">💰</span>
+                        <h3>Preços Acessíveis</h3>
+                        <p>Soluções profissionais com investimento justo, pensado para quem está crescendo.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             CONTATO / CTA FINAL
+             ======================================== -->
+        <section id="contato" class="section contact" aria-labelledby="contact-title">
+            <div class="container contact__content">
+                <h2 id="contact-title" class="section__title section__title--light">Vamos Construir Sua Presença Digital?</h2>
+                <p class="contact__text">
+                    Seu negócio merece ser visto. <strong>Não deixe mais vendas escaparem.</strong><br>
+                    Vamos criar sua presença digital profissional hoje mesmo.
+                </p>
+                <a href="https://wa.me/5531983596154?text=Olá!%20Estou%20pronto%20para%20começar%20meu%20projeto%20digital!" 
+                   class="btn btn--whatsapp btn--large" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Iniciar conversa no WhatsApp agora">
+                    <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004c-1.775.004-3.549-.538-5.056-1.492-1.507-.954-2.71-2.272-3.48-3.818-.77-1.546-1.103-3.262-.983-4.948.12-1.686.73-3.296 1.755-4.642 1.025-1.346 2.424-2.408 4.022-3.06 1.598-.652 3.34-.867 5.028-.62 1.688.247 3.27 1.003 4.55 2.18 1.28 1.177 2.18 2.71 2.59 4.38.41 1.67.31 3.42-.29 5.02-.6 1.6-1.67 3.01-3.07 4.01-1.4 1-3.06 1.54-4.76 1.57"/>
+                    </svg>
+                    Chamar no WhatsApp Agora
+                </a>
+                
+                <div class="contact__social">
+                    <span>Me acompanhe também:</span>
+                    <a href="https://instagram.com/pietro_manciini" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="contact__instagram"
+                       aria-label="Seguir no Instagram @pietro_manciini">
+                        <svg class="contact__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                        @pietro_manciini
+                    </a>
+                </div>
+                
+                <!-- Garantia -->
+                <div class="contact__guarantee">
+                    <p>🔒 <strong>Garantia de satisfação:</strong> Se não gostar do resultado, faço ajustes até você ficar 100% satisfeito.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container footer__content">
+            <p>&copy; <span id="year"></span> <strong>Pietro Miguel</strong>. Todos os direitos reservados.</p>
+            <p class="footer__small">Criação de Sites e Soluções Digitais para Comércios Locais</p>
+            <p class="footer__small">Desenvolvido com 💙 e muito café</p>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante WhatsApp (Mobile) -->
+    <a href="https://wa.me/5531983596154?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Falar no WhatsApp"
+       id="whatsappFloat">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004c-1.775.004-3.549-.538-5.056-1.492-1.507-.954-2.71-2.272-3.48-3.818-.77-1.546-1.103-3.262-.983-4.948.12-1.686.73-3.296 1.755-4.642 1.025-1.346 2.424-2.408 4.022-3.06 1.598-.652 3.34-.867 5.028-.62 1.688.247 3.27 1.003 4.55 2.18 1.28 1.177 2.18 2.71 2.59 4.38.41 1.67.31 3.42-.29 5.02-.6 1.6-1.67 3.01-3.07 4.01-1.4 1-3.06 1.54-4.76 1.57"/>
+        </svg>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
+</body>
+</html>
