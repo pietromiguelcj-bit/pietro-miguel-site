@@ -1,17 +1,44 @@
-/**
- * ========================================
- * PIETRO MIGUEL - LANDING PAGE
- * JavaScript Moderno e Otimizado
- * ========================================
- * Funcionalidades:
- * - Dark/Light Mode com persistência
- * - Menu Mobile Responsivo
- * - Smooth Scroll
- * - Animações ao scroll
- * - Header com efeito scroll
- * - Botão WhatsApp flutuante
- * - Ano dinâmico no footer
- */
+// Theme Manager
+const ThemeManager = {
+    toggle: null,
+    html: null,
+    
+    init() {
+        this.toggle = document.getElementById('themeToggle');
+        this.html = document.documentElement;
+        
+        if (!this.toggle || !this.html) return;
+        
+        const savedTheme = this.getSavedTheme();
+        this.applyTheme(savedTheme);
+        
+        this.toggle.addEventListener('click', () => this.toggleTheme());
+    },
+    
+    getSavedTheme() {
+        const saved = localStorage.getItem('pietro-theme');
+        if (saved) return saved;
+        
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        return prefersDark ? 'dark' : 'light';
+    },
+    
+    applyTheme(theme) {
+        this.html.setAttribute('data-theme', theme);
+        localStorage.setItem('pietro-theme', theme);
+    },
+    
+    toggleTheme() {
+        const current = this.html.getAttribute('data-theme');
+        const newTheme = current === 'dark' ? 'light' : 'dark';
+        this.applyTheme(newTheme);
+    }
+};
+
+// Inicializa quando o DOM carregar
+document.addEventListener('DOMContentLoaded', () => {
+    ThemeManager.init();
+});
 
 (function() {
     'use strict';
@@ -391,5 +418,6 @@
             //     .catch(err => console.log('SW falhou:', err));
         });
     }
+
 
 })();   
