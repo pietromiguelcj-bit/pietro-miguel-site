@@ -1,11 +1,4 @@
-/* ========================================
-   PIETRO MIGUEL - LANDING PAGE
-   CSS Moderno, Responsivo e Otimizado
-   ======================================== */
 
-/* ========================================
-   1. VARIÁVEIS CSS (CUSTOM PROPERTIES)
-   ======================================== */
 :root {
     /* ===== Cores - LIGHT MODE (Padrão) ===== */
     --color-bg: #fafafa;
@@ -1580,4 +1573,21 @@ button:focus,
     a {
         text-decoration: underline;
     }
+
+}
+
+/* Variáveis Light Mode */
+:root {
+    --color-bg: #fafafa;
+    --color-bg-alt: #ffffff;
+    --color-text: #1a1a1a;
+    /* ... resto das variáveis */
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+    --color-bg: #0f172a;
+    --color-bg-alt: #1e293b;
+    --color-text: #f1f5f9;
+    /* ... resto das variáveis escuras */
 }
