@@ -1,72 +1,17 @@
-// ========================================
-// MODO DARK/LIGHT
-// ========================================
-const themeToggle = document.getElementById('themeToggle');
-const html = document.documentElement;
-
-// Verifica tema salvo ou preferência do sistema
-const getPreferredTheme = () => {
-    const saved = localStorage.getItem('theme');
-    if (saved) return saved;
-    
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    return prefersDark ? 'dark' : 'light';
-};
-
-// Aplica o tema
-const applyTheme = (theme) => {
-    html.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-};
-
-// Inicializa
-applyTheme(getPreferredTheme());
-
-// Toggle ao clicar
-if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-        const current = html.getAttribute('data-theme');
-        const newTheme = current === 'dark' ? 'light' : 'dark';
-        applyTheme(newTheme);
-    });
-}
-
-// Ano dinâmico no footer
-const yearElement = document.getElementById('year');
-if (yearElement) {
-    yearElement.textContent = new Date().getFullYear();
-}
-
-// Menu mobile
-const navToggle = document.querySelector('.nav__toggle');
-const navMenu = document.querySelector('.nav__menu');
-
-if (navToggle && navMenu) {
-    navToggle.addEventListener('click', () => {
-        navToggle.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
-    
-    document.querySelectorAll('.nav__link').forEach(link => {
-        link.addEventListener('click', () => {
-            navToggle.classList.remove('active');
-            navMenu.classList.remove('active');
-        });
-    });
-}
-
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-        }
-    });
-});
-
-console.log('✅ Site carregado com sucesso!');
+/**
+ * ========================================
+ * PIETRO MIGUEL - LANDING PAGE
+ * JavaScript Moderno e Otimizado
+ * ========================================
+ * Funcionalidades:
+ * - Dark/Light Mode com persistência
+ * - Menu Mobile Responsivo
+ * - Smooth Scroll
+ * - Animações ao scroll
+ * - Header com efeito scroll
+ * - Botão WhatsApp flutuante
+ * - Ano dinâmico no footer
+ */
 
 (function() {
     'use strict';
@@ -214,7 +159,7 @@ console.log('✅ Site carregado com sucesso!');
             
             e.preventDefault();
             
-            const headerOffset = document.querySelector('.header').offsetHeight;
+            const headerOffset = document.querySelector('.header')?.offsetHeight || 70;
             const elementPosition = target.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
             
@@ -447,6 +392,4 @@ console.log('✅ Site carregado com sucesso!');
         });
     }
 
-
-})();   
-
+})();
