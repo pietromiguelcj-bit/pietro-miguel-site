@@ -1475,3 +1475,23 @@ button:focus,
     .section { page-break-inside: avoid; }
     a { text-decoration: underline; }
 }
+
+/* ========================================
+   BANNER DE PROMOÇÃO
+   ======================================== */
+.promo-banner {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+}
+
+.promo-banner strong {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .promo-banner {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+}
